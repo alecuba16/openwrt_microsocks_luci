@@ -1,0 +1,14 @@
+{
+	"luci-app-microsocks": {
+		"description": "Grant UCI access for microsocks and rc init restart from LuCI",
+		"read": {
+			"uci": [ "microsocks" ]
+		},
+		"write": {
+			"uci": [ "microsocks" ],
+			"ubus": {
+				"rc": [ "init" ]
+			}
+		}
+	}
+}

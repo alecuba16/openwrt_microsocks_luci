@@ -1,0 +1,14 @@
+{
+	"admin/services/microsocks": {
+		"title": "microsocks",
+		"order": 95,
+		"action": {
+			"type": "call",
+			"module": "luci.controller.microsocks",
+			"function": "index"
+		},
+		"depends": {
+			"uci": { "microsocks": true }
+		}
+	}
+}
