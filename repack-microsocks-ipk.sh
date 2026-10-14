@@ -2,7 +2,7 @@
 # Merge LuCI microsocks UI into an existing microsocks .ipk and produce a new .ipk.
 # OpenWrt .ipk files are either: (1) gzip-compressed tar, or (2) Unix ar with debian-binary + *.tar.gz
 # Usage: ./repack-microsocks-ipk.sh [path/to/microsocks_*.ipk]
-# Default input: ./microsocks_1.0.3-3_aarch64_cortex-a53.ipk (same directory as this script)
+# Default input: ./microsocks_1.0.4-2_aarch64_cortex-a53.ipk (same directory as this script)
 
 set -eu
 
@@ -10,7 +10,7 @@ set -eu
 export COPYFILE_DISABLE=1
 
 SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
-INPUT_IPK="${1:-$SCRIPT_DIR/microsocks_1.0.3-3_aarch64_cortex-a53.ipk}"
+INPUT_IPK="${1:-$SCRIPT_DIR/microsocks_1.0.4-2_aarch64_cortex-a53.ipk}"
 OVERLAY_HTDOC="$SCRIPT_DIR/luci-app-microsocks/htdocs"
 OVERLAY_ROOT="$SCRIPT_DIR/luci-app-microsocks/root"
 

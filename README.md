@@ -50,7 +50,7 @@ cd /Users/alejandro/Documents/microsocks
 ./repack-microsocks-ipk.sh [path/to/original.ipk]
 ```
 
-Output: `microsocks_1.0.3-3_aarch64_cortex-a53+luci.ipk`
+Output: `microsocks_1.0.4-2_aarch64_cortex-a53+luci.ipk`
 
 ### Manual build (SDK)
 
@@ -59,7 +59,7 @@ Place `luci-app-microsocks` in the LuCI `applications/` directory and build with
 ## Install
 
 ```sh
-opkg install --force-reinstall /tmp/microsocks_1.0.3-3_aarch64_cortex-a53+luci.ipk
+opkg install --force-reinstall /tmp/microsocks_1.0.4-2_aarch64_cortex-a53+luci.ipk
 rm -f /tmp/luci-indexcache /tmp/luci-indexcache.* /tmp/luci-modulecache/*
 /etc/init.d/uhttpd restart
 ```
